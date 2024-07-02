@@ -7,7 +7,9 @@ terraform {
   }
 }
 
-provider "aws" {}
+provider "aws" {
+    region = "eu-west-7"
+}
 
 
 module "s3-bucket" {
